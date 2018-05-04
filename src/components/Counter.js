@@ -13,6 +13,8 @@ class Counter extends React.Component {
     handleClick(id) {
         let { score } = this.state;
 
+        if (score === 0 && id === 'dec') return;
+
         if (id === 'dec')  {
             score--;
         } else {
