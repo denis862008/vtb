@@ -1,0 +1,46 @@
+.row {
+  text-align: center;
+  padding: 26px 0;
+  margin-bottom: 26px;
+  border-bottom: 2px #e7e8e8 solid;
+
+  > * {
+    display: inline-block;
+    vertical-align: middle;
+  }
+}
+.score {
+  margin: 0 50px;
+  font-size: 64px;
+  font-family: Arial, sans-serif;
+}
+.button {
+  width: 62px;
+  height: 62px;
+  border: 2px #e8e8e7 solid;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  border-radius: 100%;
+  cursor: pointer;
+
+  &_inc,
+  &_dec {
+    &:before {
+      display: inline-block;
+      line-height: 56px;
+      font-size: 32px;
+      color: #777;
+    }
+  }
+
+  &_inc:before {
+    content: '+';
+  }
+
+  &_dec:before {
+    content: '-';
+  }
+}
